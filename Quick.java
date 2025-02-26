@@ -10,11 +10,15 @@ public class Quick {
    * Once left ≥ right, swap the pivot (arr[0]) with arr[left].
   */
   public static int partition( int [] data, int start, int end){
-    int left = start;
+    int left = start + 1;
     int right = end;
     return -1;
   }
 
+   /* QuickSelect Wrapper Method */
+  public static int quickSelect(int[] data, int k) {
+	return quickSelect(data, k, 0, data.length - 1);
+  }
 	
   /* QuickSelect method to find the k-th smallest element
   *  pivot = partition(data, start, end)
